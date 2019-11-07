@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel Vue</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -74,6 +74,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Dashboard</a>
                     @else
+
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
@@ -85,7 +86,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    TIERRA
+                    Services Page
                 </div>
 
                 <div class="links">

@@ -72,7 +72,7 @@
                     <a href="{{ url('/contact') }}">Contact</a>
                     <a href="{{ url('/services') }}">Services</a>
                     @auth
-                        <a href="{{ url('/home') }}">Dashboard</a>
+                    <a href="{{ url('/home') }}">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -85,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    TIERRA
+                    About Page
                 </div>
 
                 <div class="links">

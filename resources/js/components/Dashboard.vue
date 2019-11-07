@@ -2,16 +2,16 @@
     <div class="container">
         <ul class="mb-3 nav nav-tabs">
             <li class="nav-item">
-                <router-link class="nav-link" to="/dashboard">Dashboard</router-link>
+                <router-link class="nav-link" to="/example">Example</router-link>
             </li>
         </ul>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Example Component</div>
+                    <div class="card-header">Dashboard Component</div>
 
                     <div class="card-body">
-                        I'm an Example component.
+                        I'm an Dashboard component.
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
 <script>
     export default {
         mounted() {
-            console.log('EXAMPLE mounted.')
+            console.log('DASHBOARD mounted.')
         }
     }
 </script>

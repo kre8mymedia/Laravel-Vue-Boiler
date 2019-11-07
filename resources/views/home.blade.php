@@ -13,8 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <p>You are logged in!</p>
+                    <br>
+                    <a href="/dashboard" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Dashboard</a>
                 </div>
             </div>
         </div>

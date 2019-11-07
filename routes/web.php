@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('/services', function () {
+    return view('pages.services');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/{any}', function () {
+    return view('pages.dashboard');
+})->where('any','.*');
