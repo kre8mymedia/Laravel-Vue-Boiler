@@ -52492,10 +52492,16 @@ Dashboard = Vue.component('dashboard', __webpack_require__(/*! ./components/Dash
 App = Vue.component('App', __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue")["default"]);
 var routes = [{
   path: '/dashboard',
-  component: Dashboard
+  component: Dashboard,
+  meta: {
+    middlewareAuth: true
+  }
 }, {
   path: '/example',
-  component: ExampleComponent
+  component: ExampleComponent,
+  meta: {
+    middlewareAuth: true
+  }
 }];
 var router = new VueRouter({
   mode: 'history',
@@ -52711,8 +52717,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\Tierra\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\Tierra\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\tierra\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\tierra\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

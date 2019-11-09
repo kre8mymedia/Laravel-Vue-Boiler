@@ -30,7 +30,10 @@ Route::get('/contact', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+Route::get('/example', 'HomeController@dashboard')->name('example');
 
-Route::get('/{any}', function () {
-    return view('pages.dashboard');
-})->where('any','.*');
+
+// Route::get('/{any}', function () {
+//     return view('pages.dashboard');
+// })->where('any','.*');

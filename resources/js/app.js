@@ -13,8 +13,15 @@ Dashboard = Vue.component('dashboard', require('./components/Dashboard.vue').def
 App = Vue.component('App', require('./App.vue').default);
 
 const routes = [
-    { path: '/dashboard', component: Dashboard },
-    { path: '/example', component: ExampleComponent },
+    { 
+        path: '/dashboard',
+        component: Dashboard,
+        meta: { middlewareAuth: true }
+    },
+    {   path: '/example', 
+        component: ExampleComponent,
+        meta: { middlewareAuth: true }
+    },
 ]
 
 const router = new VueRouter({
