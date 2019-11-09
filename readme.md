@@ -22,10 +22,10 @@ Run "npm install"
 ## Return app-name/public to root on web server XAMPP
 Navigate to your server path at /apache/conf/extra/httpd-vhosts.conf
 
-Paste <pre><VirtualHost *:80>
+Paste <VirtualHost *:80>
           DocumentRoot "C:/xampp/htdocs/app-name/public"
           ServerName app-name.me
-          </VirtualHost></pre>
+          </VirtualHost>
         
 ## On Your Local Machine navigate to this path as ADMINISTRATOR
 
