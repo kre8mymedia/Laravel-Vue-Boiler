@@ -19,20 +19,6 @@ Run "php artisan key:generate"
 
 Run "npm install"
 
-## Return app-name/public to root on web server XAMPP
-Navigate to your server path at /apache/conf/extra/httpd-vhosts.conf
-
-Paste <VirtualHost *:80>
-          DocumentRoot "C:/xampp/htdocs/app-name/public"
-          ServerName app-name.me
-          </VirtualHost>
-        
-## On Your Local Machine navigate to this path as ADMINISTRATOR
-
-C:/windows/System32/drivers/etc/hosts
-
-Paste "127.0.0.1 app-name.me"
-
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
